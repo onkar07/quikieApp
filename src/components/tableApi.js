@@ -18,7 +18,7 @@ function Table() {
       for(let i=0; i<Math.ceil((crypto.length)/itempp); i++){
       page.push(i);
     }
-    const IndexOfLastpage = currentPage * itempp;
+    const IndexOfLastpage = currentPage + itempp;
     const IndexOfFirstpage = IndexOfLastpage - itempp;
     const CurrentItem = crypto.slice(IndexOfFirstpage,IndexOfLastpage);  
     console.log(IndexOfLastpage,IndexOfFirstpage,CurrentItem)
@@ -36,10 +36,14 @@ function Table() {
   }
 
   const handlePage = (event) =>{
-    if(currentPage >= (crypto.length/5)){
+    if(currentPage >= (crypto.length)){
       alert("no page")
     }
-    setCurrentpage(currentPage+itempp)
+    else{
+      setCurrentpage(currentPage+itempp)
+      
+    }
+    
   }
   const handlePageBackward = () =>{
     if(currentPage==1){
