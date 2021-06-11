@@ -1,0 +1,36 @@
+.heroLogo img{
+    width: 15%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+.cardValue{
+    margin: 20px auto;
+}
+.cardCenter{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background-color: #f5f5f5 !important;
+}
+.crdt{
+    text-transform: uppercase;
+    margin-top: .5rem;
+    text-align: left;
+}
+.heroCard{
+    margin-top: 20px;
+    
+    
+}
+.dis{
+    display: inline;
+}
+.drop{
+    display: flex !important;
+}
+.row>*{
+    display: flex !important; 
+}
