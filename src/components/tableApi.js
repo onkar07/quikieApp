@@ -30,7 +30,7 @@ function Table() {
       Object.entries(crypto).map((val)=>{
           if(Cname == val[1].name){
             console.log(val[1])
-            console.log(e.currentTarget.id)
+            console.log(e.currentTarget.id) 
           }
       })
   }
@@ -89,7 +89,7 @@ function Table() {
                                   <th scope="row">{val[1].name}</th>
                                   <td><span className="symbol">•{'\u00A0'}{val[1].symbol}</span></td>
                                   <td>${val[1].market_cap%1000.00}K</td>
-                                  <td> <button className="btn btncolor" id={val[1].name} onClick={handleClick}>{text}</button>  </td>
+                                  <td> <button className="btn btncolor" id={val[1].name} onClick={setText("yo")}>{text}</button>  </td>
                                   <td>${val[1].price}<br/><sub>USD</sub></td>
                                 </tr>
                               ) 
@@ -98,7 +98,7 @@ function Table() {
                             <tr className="borderbottom">
                                 <td colSpan="5" className="" >
                                     <div className="navigater d-flex justify-content-end me-5">
-                                      <span className="me-5">{currentPage}-{IndexOfLastpage} of {IndexOfLastpage}</span>  
+                                      <span className="me-5">{currentPage}-{IndexOfLastpage} of {crypto.length}</span>  
                                       <span className="me-5" onClick={handlePageBackward}>{'<'}</span>    
                                       <span className="me-5" onClick={handlePage}>{'>'}</span>
                                     </div>
