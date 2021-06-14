@@ -19,10 +19,6 @@ function Table() {
 },[])
 
     if(crypto != null){
-      const page = [];
-      for(let i=0; i<Math.ceil((crypto.length)/itempp); i++){
-      page.push(i);
-    }
     const IndexOfLastpage = currentPage + itempp;
     const IndexOfFirstpage = IndexOfLastpage - itempp;
     const CurrentItem = crypto.slice(IndexOfFirstpage,IndexOfLastpage);  
